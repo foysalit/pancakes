@@ -1,0 +1,40 @@
+<template name="cakes_plate">
+<div class="row">
+	{{#if cakes}}
+		{{#each cakes}}
+		<div class="col-sm-4 col-md-4">
+			<div class="cake">
+				<div class="cake-img-content">
+					<img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive" />
+					<span class="cake-title"><b>Make a Image Blur Effects With</b><br />
+					<b>CSS3 Blur</b></span>
+				</div>
+				<div class="content">
+					<div class="author">
+						By <b>Bhaumik</b> | <time datetime="2014-01-20">January 20th, 2014</time>
+					</div>
+					
+					<div>
+						{{title}}
+					</div>
+					
+					<div>
+						<a href="{{cake}}" class="btn btn-warning btn-sm">
+							Read more
+						</a>
+						<a 
+							data-id="{{_id}}" 
+							href="#" 
+							class="btn btn-danger btn-sm remove-cake">
+							Remove
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/each}}
+	{{else}}
+		<h1>No cakes baked</h1>
+	{{/if}}
+</div>
+</template>

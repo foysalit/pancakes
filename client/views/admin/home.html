@@ -1,0 +1,18 @@
+<template name="back_home">
+  <h1>{{ hi }}</h1>
+</template>
+
+<template name="add_cake_form">
+	<div class="row">
+    	<div class="col-md-6 col-md-offset-3">
+            <form method="post" accept-charset="utf-8" class="form" id="add_cake_form" role="form">   
+                <input type="url" name="cake" id="cake" value="" class="form-control input-lg" placeholder="Your cake"  />
+                <input type="text" name="title" id="title" value="" class="form-control input-lg" placeholder="Title"  />     
+
+          	    <button class="btn btn-lg btn-primary btn-block signup-btn" type="submit">
+                    add your cake
+                </button>
+            </form>          
+		</div>
+	</div>  
+</template>
